@@ -250,6 +250,9 @@ body {
       background-color: var(--white-color);
       color: #000;
     }
+    .hero-content{
+      padding-bottom: 100px;
+    }
     .display{
       display: block;
       position: absolute;
