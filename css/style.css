@@ -768,6 +768,8 @@ body {
   color: var(--text-color);
 }
 
+/* FOOTER END  */
+
 /* FOOTER RESPONSIVE START  */
 
 @media screen and (max-width: 770px) {
@@ -777,7 +779,9 @@ body {
     align-items: center;
   }
   .footer__wrapper{
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 31px;
   }
   .foot-nav__item:last-child{
@@ -803,6 +807,8 @@ body {
   }
   
 }
+
+/* FOOTER RESPONSIVE END  */
 
 
 /* COMPANY RESPONSIVE START  */
