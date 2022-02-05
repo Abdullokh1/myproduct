@@ -385,13 +385,21 @@ body {
 /* EXPERT RESPONSIVE START  */
 
 @media screen and (max-width: 862px) { 
-  .expert__list{
-    flex-direction: column;
+  .expert__title{
+    margin-bottom: 10px;
+  }
+  .expert__text{
+    width: 100%;
+  }
+  .expert__desc{
+    width: 60%;
   }
   .expert__item{
-    margin: 0 auto;
     margin-bottom: 30px;
   }
+
+
+
 }
 
 
@@ -422,14 +430,22 @@ body {
     width: 100%;
     height: 100%;
   }
-  .management__item{
+  .management__wrapper{
     width: 100%;
   }
+  .management__item{
+    width: 98%;
+  }
   .management__text{
-    width: 95%;
+    width: 100%;
   }
   #management{
     padding: 0 3%;
+  }
+  .management__inner__item::before{
+    width: 19%;
+    background-repeat: no-repeat;
+    margin-right: 15px;
   }
 }
 
@@ -491,26 +507,32 @@ body {
 
 /* PRODUCT END  */
 
-/* HERO START  */
+/* HERO RESPONSIVE START  */
 
 
 @media screen and (max-width: 992px) {
-  .hero__img{
-    width: 400px;
-    height: 400px;
-  }
   
 }
 @media screen and (max-width: 885px) {
   .nav__link{
     font-size: 13px;
   }
-  .header__btn{
-    font-size: 12px;
-  }
   .hero__img{
-    width: 320px;
-    height: 320px;
+    width: 100%;
+    height: 100%;
+  }
+  .hero__link{
+    margin-bottom: 25px;
+  }
+  .hero__link__wrapper{
+    display: inline-block;
+  }
+  .hero__video__link{
+    display: flex;
+    text-decoration: none;
+  }
+  .bxs-right-arrow{
+    position: static;
   }
   
 }
@@ -518,8 +540,8 @@ body {
     .site-nav{
       position: fixed;
       top: 0;
-      right: -110%;
-      width: 100vw;
+      right: -100%;
+      width: 100%;
       min-height: 100vh;
       padding: 60px;
       background-color: rgba(0, 0, 0, 0.925);
@@ -609,8 +631,8 @@ body {
       display: block;
     }
     .hero__img{
-      width: 338px;
-      height: 310px;
+      width: 100%;
+      height: 100%;
     }
    .burger-btn{
      display: block;
@@ -623,6 +645,7 @@ body {
      flex-direction: column-reverse;
      text-align: center;
    }
+     
    
 }
 
