@@ -44,13 +44,13 @@ body {
 .site-header {
   padding-top: 19px;
 }
-.header__logo__link{
+.header__logo__link, .footer__logo__link{
   text-decoration: none;
 }
 .none{
   display: none;
 }
-.header__logo__text {
+.header__logo__text, .footer__logo__text {
   margin-left: 16px;
   font-weight: 700;
   font-size: 30px;
@@ -475,6 +475,9 @@ body {
 
 /* PRICE START  */
 
+.price{
+  margin-bottom: 150px;
+}
 .price__list {
   list-style: none;
 }
@@ -575,6 +578,298 @@ body {
   color: var(--white-color);
 }
 
+/* PRICE END  */
+
+/* CLIENT START  */
+
+.client{
+  margin-bottom: 150px;
+}
+.client__text__wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+.client__title {
+  font-size: 34px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+.client__text {
+  letter-spacing: 0.2px;
+  color: var(--text-color);
+  font-weight: 500;
+  line-height: 28px;
+  width: 537px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.client__list {
+  list-style: none;
+}
+.client__item {
+  width: 327px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  background-color: var(--white-color);
+}
+.client__inner {
+  padding: 26px;
+}
+.client__inner::before{
+  content: "";
+  width: 106px;
+  height: 18px;
+  background-image: url('../images/stars.svg');
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.client__sub__text {
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin-bottom: 16px;
+}
+.client__img {
+  margin-right: 14px;
+}
+.client__name {
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #02897a;
+}
+.client__job {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+
+/* CLIENTS END  */
+
+/* COMPANY START  */
+
+.company{
+  margin-bottom: 150px;
+}
+.company__inner{
+  width: 968px;
+  padding: 14px 36px 0px 51px;
+  background-color: var(--primary-color);
+  border-radius: 32px;
+  margin: 0 auto;
+}
+.company__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 151.4%;
+  color: var(--white-color);
+  width: 510px;
+  margin-bottom: 58px;
+}
+.company__link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  padding: 13px 35px 7px 33px;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+  border: 1px solid transparent;
+}
+.company__link:hover{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: 1px solid #bcd0e5;
+}
+.company__img {
+  width: 351px;
+  height: 331px;
+  object-fit: cover;
+}
+
+/* COMPANY END  */
+
+/* FOOTER START  */
+
+.footer{
+  padding-bottom: 46px;
+}
+.footer__list{
+  list-style: none;
+}
+.footer__logo__link{
+  margin-bottom: 25px;
+}
+.footer__item:not(:last-child){
+  margin-right: 16px;
+}
+.footer__title {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+.footer__nav__list {
+  list-style: none;
+}
+.foot-nav__link {
+  text-decoration: none;
+  line-height: 35px;
+  color: var(--text-color);
+  position: relative;
+  padding-bottom: 5px;
+}
+.foot-nav__link:hover{
+  color: var(--primary-color);
+}
+.footer__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--text-color);
+  width: 280px;
+  margin-bottom: 34px;
+}
+.footer__input {
+  width: 325px;
+  height: 48px;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  padding: 0 15px;
+  margin-bottom: 21px;
+}
+.footer__input:focus{
+  outline: none;
+}
+.footer__btn {
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  border: 1px solid transparent;
+  transition: all 0.4s ease;
+}
+.footer__btn:hover{
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  border: 1px solid #bcd0e5;
+}
+.footer__reserved{
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* FOOTER RESPONSIVE START  */
+
+@media screen and (max-width: 770px) {
+  .footer__inner{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .footer__wrapper{
+    margin: 0 auto;
+    margin-bottom: 31px;
+  }
+  .foot-nav__item:last-child{
+    margin-bottom: 32px;
+  }
+  .footer__btn{
+    margin-bottom: 44px;
+  }
+  .footer__text{
+    margin-bottom: 34px;
+  }
+  .footer__input{
+    margin-top: 34px;
+  }
+  .footer__reserved{
+    width: 100%;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+
+  .footer__text{
+    margin: 0 auto;
+  }
+  
+}
+
+
+/* COMPANY RESPONSIVE START  */
+
+@media screen and (max-width: 995px) {
+  .company__link{
+    margin-bottom: 42px;
+    display: inline-block;
+  }
+  .company__inner{
+    width: 100%;
+    padding: 20px 0;
+  }
+  .company__title{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 28px;
+  }
+  .company__wrapper{
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .company{
+    margin-bottom: 100px;
+    padding: 0 15px;
+  }
+}
+
+/* COMPANY RESPONSIVE END  */
+
+
+
+/* CLIENTS RESPONSIVE START  */
+
+@media screen and (max-width: 1030px) {
+  .client__list{
+    flex-direction: column;
+    align-items: center;
+  }
+  .client__item{
+    margin-bottom: 32px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .client__list{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .client__text__wrapper{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .client__text{
+    width: 100%;
+  }
+  .client{
+    margin-bottom: 100px;
+  }
+}
+
+/* CLIENT RESPONSIVE END  */
+
+
 /* PRICE RESPONSIVE START  */
 
 @media screen and (max-width: 1102px) {
@@ -595,8 +890,13 @@ body {
   .price__text{
     width: 100%;
   }
-  
+  .price{
+    margin-bottom: 90px;
+  }
 }
+
+/* PRICE RESPONSIVE END  */
+
 
 /* STRATEGY RESPONSIVE START  */
 
@@ -648,7 +948,9 @@ body {
   .strategy{
     display: flex;
     flex-direction: column;
+    margin-bottom: -60px;
   }
+  
   
 }
 
@@ -922,6 +1224,11 @@ body {
       top: 20px;
       color: var(--text-color);
       display: block;
+    }
+    .header__dark__btn{
+      position: absolute;
+      right: 15%;
+      top: -30px;
     }
     .hero__img{
       width: 100%;
