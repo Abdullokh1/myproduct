@@ -27,9 +27,9 @@
           <div class="site-nav" id="siteNav">
             <nav class="row middle navbar" >
               <ul class="header__list nav row" >
-                <li class="nav__item"><a class="nav__link nav__link--active" href="index.html">Product </a></li>
+                <li class="nav__item"><a class="nav__link " href="index.html">Product </a></li>
                 <li class="nav__item"><a class="nav__link nav__link--hover" href="#">Customers</a></li>
-                <li class="nav__item"><a class="nav__link nav__link--hover" href="price.html">Pricing</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--hover nav__link--active" href="price.html">Pricing</a></li>
                 <li class="nav__item"><a class="nav__link nav__link--hover" href="#">Resources</a></li>
               </ul>
                 <button class="header__signin__btn header__btn">Sign In</button>
@@ -136,8 +136,54 @@
 
             </ul>
           </div>
-          
         </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="container">
+        <div class="faq__inner">
+          <h4 class="faq__title">Frequently asked question</h4>
+          <p class="faq__text">Something is not clear? You need help? Check our FAQ section</p>
+        </div>
+        <ul class="faq__list">
+
+          <li class="faq__item">
+            <div class="row middle faq__wrapper">
+              <button class="faq__btn" id="faqBtn"></button>
+              <h5 class="faq__question row middle">What are my payment option?</h5>
+              <p class="faq__answer" id="showAnswer">After creating your account you will have an oppurtunity to create your first project that will be associated withthe collaborators e-mail. An invitation  will be sent automatically. Then, invited user will have to confirm his account by e-mail and finish userd onboarding.</p>
+            </div>
+          </li>
+
+          
+          <li class="faq__item">
+            <div class="row middle faq__wrapper">
+              <button class="faq__btn faq__btn--second" id="faqBtn-2"></button>
+              <h5 class="faq__question row middle">How can I invite collaborator to platform?</h5>
+              <p class="faq__answer" id="showAnswer-2">After creating your account you will have an oppurtunity to create your first project that will be associated withthe collaborators e-mail. An invitation  will be sent automatically. Then, invited user will have to confirm his account by e-mail and finish userd onboarding.</p>
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <div class="row middle faq__wrapper">
+              <button class="faq__btn" id="faqBtn-3"></button>
+              <h5 class="faq__question row middle">Can I upgrade my plan?</h5>
+              <p class="faq__answer" id="showAnswer-3">After creating your account you will have an oppurtunity to create your first project that will be associated withthe collaborators e-mail. An invitation  will be sent automatically. Then, invited user will have to confirm his account by e-mail and finish userd onboarding.</p>
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <div class="row middle faq__wrapper">
+              <button class="faq__btn" id="faqBtn-4"></button>
+              <h5 class="faq__question row middle">Can I cancel my plan at anytime?</h5>
+              <p class="faq__answer" id="showAnswer-4">After creating your account you will have an oppurtunity to create your first project that will be associated withthe collaborators e-mail. An invitation  will be sent automatically. Then, invited user will have to confirm his account by e-mail and finish userd onboarding.</p>
+            </div>
+          </li>
+
+
+        </ul>
+
 
       </div>
 
@@ -231,7 +277,7 @@
         <div>
           <p class="footer__text">knowing you're always on the best energy deal.</p>
           <form action="#">
-            <input class="footer__input" type="text" name="name"><br>
+            <input class="footer__input" type="text" name="name" required><br>
             <button class="footer__btn" type="submit">Sign up Now</button>
           </form>
         </div>
