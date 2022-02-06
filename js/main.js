@@ -24,6 +24,15 @@ let elopenanswerfour = document.getElementById('faqBtn-4');
 
 let elshowfour = document.getElementById('showAnswer-4');
 
+
+eldark.addEventListener('click', function(){
+  document.body.classList.toggle('dark');
+})
+
+elmenu.addEventListener('click', function(e){
+  elSite.classList.toggle('show');
+  e.target.classList.toggle('show');
+})
 elopenanswerfour.addEventListener('click', function(){
   elshowfour.classList.toggle('answer');
 })
@@ -57,13 +66,4 @@ elopenanswer.addEventListener('click', function(){
 
 elopenanswer.addEventListener('click', function(){
   elopenanswer.classList.toggle('change-img');
-})
-
-eldark.addEventListener('click', function(){
-  document.body.classList.toggle('dark');
-})
-
-elmenu.addEventListener('click', function(e){
-   elSite.classList.toggle('show');
-   e.target.classList.toggle('show');
 })
