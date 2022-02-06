@@ -10,21 +10,30 @@
 :root{
   --primary-color: #02897a;
   --text-color: #22343d;
+
   --white-color: #fff;
   --body-color: #fff;
+
   --btn-color: #173a56;
   --bg-light: url('../images/bg-img.png');
+
   --expert-light-img: url('../images/expert-light-img.png');
   --black-color:#22343d; 
+
   --border-color: #ececec;
+  --enterprise-bg-color: linear-gradient(180deg, #f7f7f7 0%, rgba(247, 247, 247, 0) 100%);
+
 }
 .dark{
   --body-color: #1f2e35;
   --text-color: #fff;
+
   --btn-color: #fff;
   --bg-light: url('../images/dark-bg.png');
+
   --expert-light-img: url('../images/expert-dark-img.png');
   --border-color: #1f2e35;
+  --enterprise-bg-color: #22343d;
 }
 html{
   scroll-behavior: smooth;
@@ -123,16 +132,10 @@ body {
   display: none;
   color: var(--text-color);
 }
-.burger-btn:hover{
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
 
 
 /* HERO START  */
 
-#hero{
-  padding-bottom: 114px;
-}
 .hero-content {
   padding-top: 43px;
 }
@@ -183,6 +186,7 @@ body {
 
 #product{
   padding-bottom: 90px;
+  padding-top: 114px;
   background-image: var(--bg-light);
   background-size: cover;
   background-position: center center;
@@ -478,6 +482,9 @@ body {
 .price{
   margin-bottom: 150px;
 }
+.price--secodnpage{
+  padding-top: 50px;
+}
 .price__list {
   list-style: none;
 }
@@ -577,8 +584,149 @@ body {
   background-color: var(--primary-color);
   color: var(--white-color);
 }
+.price__text__wrapper{
+  padding-top: 0;
+}
+.price__title--secondpage{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding-bottom: 32px;
+}
+.price__second__page__text{
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+.price__second__page__desc{
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 49px;
+}
 
 /* PRICE END  */
+
+/* ENTERPRICE START  */
+
+.enterprise{
+  background: var(--enterprise-bg-color);
+  margin-bottom: 150px;
+}
+.enterprise__inner {
+  text-align: center;
+  padding-top: 53px;
+  padding-bottom: 62px;
+}
+.enterprise__title, .stats__title {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+.enterprise__text {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 51px;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+.enterprise__desc {
+  color: var(--text-color);
+  margin-bottom: 32px;
+}
+.enterprise__link{
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  padding: 11px 18px;
+  border-radius: 8px;
+  display: inline-block;
+  border: 1px solid transparent;
+  transition: all 0.4s ease;
+}
+.enterprise__link:hover{
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  border: 1px solid #bcd0e5;
+
+}
+
+/* ENTERPRISE END  */
+
+/* STATS START  */
+
+.stats{
+  margin-bottom: 150px;
+}
+.stats__title{
+  text-align: center;
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 56px;
+}
+.stats__list {
+  list-style: none;
+}
+.stats__img{
+  width: 510px;
+}
+.stats__item {
+  margin-bottom: 32px;
+}
+.stats__sub__title {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--text-color);
+  margin-bottom: 23px;
+}
+.stats__sub__title::before{
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/enteprenuer-img.svg');
+  display: inline-block;
+  margin-right: 14px;
+}
+.stats__sub__title--second::before{
+  background-image: url('../images/accauntants.svg');
+}
+.stats__sub__title--third::before{
+  background-image: url('../images/universities.svg');
+}
+.stats__text {
+  color: var(--text-color);
+  width: 533px;
+}
+
+@media screen and (max-width: 1095px) {
+  .stats__inner{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .stats__img{
+    display: none;
+  }
+  .stats__text{
+    width: 100%;
+  }
+  .stats__img__wrapper{
+    background-image: url('../images/product-repsonsive-img.png');
+    background-repeat: no-repeat;
+    width: 352px;
+    height: 288px;
+    margin-bottom: 48px;
+  }
+  
+}
 
 /* CLIENT START  */
 
@@ -1124,18 +1272,17 @@ body {
   }
   .hero__link{
     margin-bottom: 25px;
+    font-size: 13px;
+    margin-right: 4px;
   }
   .hero__link__wrapper{
-    display: inline-block;
+    width: 90%;
   }
   .hero__video__link{
-    display: flex;
-    text-decoration: none;
+    font-size: 12px;
+    width: 100%;
   }
-  .bxs-right-arrow{
-    position: static;
-  }
-  
+   
 }
 @media screen and (max-width: 768px ) {
     .site-nav{
