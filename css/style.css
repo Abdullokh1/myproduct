@@ -396,12 +396,149 @@ body {
   background-image: url('../images/avatar-4.svg');
 }
 
+/* BUSINESS START  */
+
+.business{
+  padding: 70px 0;
+}
+.business__inner{
+  height: 482px;
+}
+.business__content{
+  height: 100%;
+}
+.business__img{
+  width: 100%;
+}
+.business__second__container{
+  padding: 0 0;
+}
+.business__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 149%;
+  letter-spacing: -0.03em;
+  color: var(--text-color);
+  margin-bottom: 24px;
+  width: 380px;
+}
+.business__desc {
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: -0.03em;
+  color: var(--text-color);
+  margin-bottom: 24px;
+}
+.business__input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 100px;
+  padding: 25px 140px 25px 27px;
+  background-color: var(--body-color);
+}
+.business__input:focus{
+  outline: none;
+}
+.business__input__wrapper{
+  width: 469px;
+  height: 66px;
+  background-color: #fff;
+  position: relative;
+  border: 1px solid #eaeaea;
+  border-radius: 100px;
+  margin-bottom: 24px;
+}
+::placeholder{
+  color: var(--text-color);
+}
+.business__btn {
+  width: 117px;
+  height: 50px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  font-weight: 600;
+  color: var(--white-color);
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  transition: all 0.4s ease;
+  border: 1px solid transparent;
+}
+.business__img__wrapper{
+  width: 100%;
+}
+.business__btn:hover{
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  border: 1px solid #bcd0e5;
+}
+.business__join__text{
+  font-weight: 500;
+  color: var(--text-color);
+}
+.busines__amount{
+  color: var(--primary-color);
+}
+.business__join__img{
+  margin-right: 9px;
+}
+
+@media screen and (max-width: 922px) {
+  .business__input__wrapper{
+    width: 100%;
+  }
+  
+}
+@media screen and (max-width: 770px) {
+  .business__inner{
+    text-align: center;
+  }
+  .business__img{
+    display: none;
+  }
+  ::placeholder{
+    font-size: 14px;
+  }
+  .business__content{
+    margin-bottom: 87px;
+  }
+  .business__input{
+    width: 100%;
+  }
+  .business__join__img__wrapper{
+    justify-content: center;
+  }
+  .business__img__wrapper{
+    background-image: url('../images/mobile-img.png');
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 265px;
+    margin: 0 auto;
+  }
+  .business__title{
+    width: 100%;
+  }
+  .business__main__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 /* EXPERT END  */
 
 /* STRATEGY START  */
 
 .strategy{
   margin-bottom: 150px;
+}
+.strategy--second{
+  padding-top: 66px;
+  padding-bottom: 70px;
 }
 .strategy__title {
   font-weight: bold;
@@ -424,9 +561,6 @@ body {
   border: 1px solid var(--border-color);
   border-radius: 8px;
   background-color: var(--white-color);
-}
-.strategy__item:not(:last-child){
-  margin-right: 32px;
 }
 .strategy__img{
   width: 340px;
@@ -482,6 +616,47 @@ body {
 }
 .strategy__btn__wrapper{
   text-align: center;
+}
+.strategy__item--second{
+  border: none;
+}
+.strategy__img--secondpage{
+  background-image: url('../images/motivation-img.png');
+}
+.strategy__img--thirdpage{
+  background-image: url('../images/success-img.png');
+}
+.strategy__img--fourthpage{
+  background-image: url('../images/prosperties-img.png');
+}
+.strategy__img--fifthpage{
+  background-image: url('../images/texting-img.png');
+}
+.strategy__img--sixthpage{
+  background-image: url('../images/notebook-text.png');
+}
+.strategy__text__wrapper--second{
+  text-align: center;
+}
+.strategy__more__link{
+  text-align: center;
+}
+.strategy__story__link{
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+.bx-chevron-right-circle{
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 1035px) {
+  .strategy__list--second{
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
 
 /* STRATEGY END  */
@@ -1447,7 +1622,6 @@ body {
     display: flex;
     margin-bottom: 30px;
     position: relative;
-    left: 3%;
   }
   .strategy__item:last-child{
     width: 96%;
